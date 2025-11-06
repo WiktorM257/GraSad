@@ -1,0 +1,79 @@
+#koszyk {
+    width: 100px;
+    height: 60px;
+    background: peru;
+    border: 3px solid saddlebrown;
+    border-radius: 0 0 50px 50px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+  }
+
+
+.score{
+    margin-left: 90%;
+    margin-top: 4%;
+     font-size: 30px;
+     font-weight: bold;
+     color: white;
+
+
+}
+
+  #koszyk::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    width: 70px;
+    height: 30px;
+    border: 3px solid saddlebrown;
+    border-bottom: none;
+    border-radius: 50px 50px 0 0;
+  }
+
+
+  .obiekt {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 50%;
+  }
+  .obiekt1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: rgb(57, 255, 83);
+    border-radius: 50%;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* opcjonalnie, żeby nic nie wychodziło poza ekran */
+  }
+
+  .komunikat {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 25px 60px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: none;
+  font-family: "Segoe UI", Arial, sans-serif;
+  z-index: 2000;
+}
+  body {
+    background-image: url('sad.jpg');
+    background-size: cover;       /* dopasowuje obraz do ekranu */
+    background-repeat: no-repeat; /* nie powtarza obrazka */
+    background-position: center;  /* wyśrodkowanie */
+  }
